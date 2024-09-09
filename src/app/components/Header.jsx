@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Header() {
   return (
-    <header className="bg-gradient-to-r from-purple-600 to-blue-600 shadow-md">
+    <header className="bg-gradient-to-r from-purple-900 to-blue-700 shadow-md">
       <div className="max-w-6xl mx-auto flex justify-between items-center p-3">
           {/* I'll be adding logo */}
         <Link href="/" className="text-2xl font-extrabold group cursor-pointer">
@@ -15,7 +15,13 @@ export default function Header() {
             App
           </span>
         </Link>
-        
+        <nav>
+            <ul className="flex items-center space-x-4">
+                <Link href="/">Home</Link>
+                <Link href="/about">About</Link>
+                <Link href="/sing-in">Sign in</Link>
+            </ul>
+        </nav>
       </div>
     </header>
   );
