@@ -19,7 +19,7 @@ export default function Header() {
             <ul className="flex items-center space-x-4">
                 <Link href="/">Home</Link>
                 <Link href="/about">About</Link>
-                <Link href="/sing-in">Sign in</Link>
+                <Link href="/sign-in">Sign in</Link>
             </ul>
         </nav>
       </div>
