@@ -26,11 +26,15 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <ClerkLoading>
+          <div className="fixed top-0 left-0 w-screen h-screen bg-white flex justify-center items-center">
+            <p className="text-2xl font-bold text-gray-800">Loading...</p>
+          </div>  
+        </ClerkLoading>
         <ClerkLoaded>
-           
-        </ClerkLoaded>
         <Header />
         {children}
+        </ClerkLoaded>
       </body>
     </html>
     </ClerkProvider>
