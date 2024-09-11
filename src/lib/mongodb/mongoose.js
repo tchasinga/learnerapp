@@ -17,7 +17,8 @@ export const connect = async () => {
             useUnifiedTopolofy: true,
         })
         console.log("MongoDb is connected")
+        initialized= true;
     } catch (error) {
-        
+        console.log("Is there some error for really ")
     }
 }
